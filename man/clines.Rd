@@ -3,7 +3,7 @@
 %- Also NEED an `\alias' for EACH other topic documented here.
 \title{ Calculate Contour Lines }
 \description{
-  Produces a list contours.  Each contour is a list of 3 elements:
+  Produces a list of contours.  Each contour is a list of 3 elements:
   the contour level, the x-coordinates of the contour, and the
   y-coordinates of the contour.
 }
@@ -34,10 +34,9 @@ clines(x, y, z, nlevels = 10, levels = pretty(range(z, na.rm = TRUE), nlevels))
   \item{3 }{The y-coordinates of the contour.}
 }
 \section{Warning}{
-  This function is just a temporary interface to the C code
-  underlying the \code{contour} function.  In future versions,
-  this function, or an equivalent, will be available as a base
-  R function.
+  This function was just a temporary interface to the C code
+  underlying the \code{contour} function.  There is now a base
+  function called \code{contourLines} which should be used instead.
   }
 \author{ Paul Murrell }
 \examples{
