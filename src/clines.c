@@ -24,8 +24,7 @@ SEXP clines(SEXP x, SEXP y, SEXP z, SEXP levels) {
   return GEcontourLines(REAL(x), LENGTH(x),
 			REAL(y), LENGTH(y),
 			REAL(z), 
-			REAL(levels), LENGTH(levels),
-			(GEDevDesc*) CurrentDevice());
+			REAL(levels), LENGTH(levels));
 }
 
 
